@@ -4,6 +4,7 @@ import 'package:riverpod_ex/screen/state_notifier_provider_screen.dart';
 import 'package:riverpod_ex/screen/state_provider_screen.dart';
 import 'package:riverpod_ex/screen/stream_provider_screen.dart';
 
+import 'family_modifier_screen.dart';
 import 'future_provider_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -26,7 +27,10 @@ class HomeScreen extends StatelessWidget {
             }, child: Text('FutureProviderScreen')),
             ElevatedButton(onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(builder: (_) => StreamProviderScreen()));
-            }, child: Text('StreamProviderScreen'))
+            }, child: Text('StreamProviderScreen')),
+            ElevatedButton(onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (_) => FamilyModifierScreen()));
+            }, child: Text('FamilyModifierScreen'))
           ],
         ));
   }
