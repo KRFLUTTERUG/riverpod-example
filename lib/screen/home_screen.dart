@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:riverpod_ex/layout/default_layout.dart';
+import 'package:riverpod_ex/screen/provider_screen.dart';
 import 'package:riverpod_ex/screen/select_provider_screen.dart';
 import 'package:riverpod_ex/screen/state_notifier_provider_screen.dart';
 import 'package:riverpod_ex/screen/state_provider_screen.dart';
@@ -42,7 +43,10 @@ class HomeScreen extends StatelessWidget {
             }, child: const Text('ListenProviderScreen')),
             ElevatedButton(onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SelectProviderScreen()));
-            }, child: const Text('SelectProviderScreen'))
+            }, child: const Text('SelectProviderScreen')),
+            ElevatedButton(onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ProviderScreen()));
+            }, child: const Text('ProviderScreen'))
           ],
         ));
   }
