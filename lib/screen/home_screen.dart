@@ -18,23 +18,23 @@ class HomeScreen extends StatelessWidget {
         body: ListView(
           children: [
             ElevatedButton(onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (_) => StateProviderScreen()));
-            }, child: Text('StateProviderScreen')),
+              Navigator.of(context).push(MaterialPageRoute(builder: (_) => const StateProviderScreen()));
+            }, child: const Text('StateProviderScreen')),
             ElevatedButton(onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (_) => StateNotifierProviderScreen()));
-            }, child: Text('StateNotifierProviderScreen')),
+              Navigator.of(context).push(MaterialPageRoute(builder: (_) => const StateNotifierProviderScreen()));
+            }, child: const Text('StateNotifierProviderScreen')),
             ElevatedButton(onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (_) => FutureProviderScreen()));
-            }, child: Text('FutureProviderScreen')),
+              Navigator.of(context).push(MaterialPageRoute(builder: (_) => const FutureProviderScreen()));
+            }, child: const Text('FutureProviderScreen')),
             ElevatedButton(onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (_) => StreamProviderScreen()));
-            }, child: Text('StreamProviderScreen')),
+              Navigator.of(context).push(MaterialPageRoute(builder: (_) => const StreamProviderScreen()));
+            }, child: const Text('StreamProviderScreen')),
             ElevatedButton(onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (_) => FamilyModifierScreen()));
-            }, child: Text('FamilyModifierScreen')),
+              Navigator.of(context).push(MaterialPageRoute(builder: (_) => const FamilyModifierScreen()));
+            }, child: const Text('FamilyModifierScreen')),
             ElevatedButton(onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (_) => AutoDisposeModifierScreen()));
-            }, child: Text('AutoDisposeModifierScreen'))
+              Navigator.of(context).push(MaterialPageRoute(builder: (_) => const AutoDisposeModifierScreen()));
+            }, child: const Text('AutoDisposeModifierScreen'))
           ],
         ));
   }
